@@ -28,7 +28,10 @@ namespace EvaluationManager
             }
             else if(txtUsername.Text == username && txtPassword.Text == password)
             {
-                MessageBox.Show($"Ulogirani ste kao {txtUsername.Text}");   
+                FrmStudents form = new FrmStudents();
+                Hide();
+                form.ShowDialog();
+                Close();
             }
             else
             {
